@@ -1,0 +1,291 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Bolt - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+ 
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+
+/* OVERALL ASPECT */
+
+
+body {
+  background-color: #ffffff;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    
+    margin-top: 70px;
+}
+
+/* Titles */
+h1, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+h2 {
+	font-weight: bold;
+}
+
+h3 {
+	font-weight: 500;
+}
+.moving {
+	position: relative;
+	animation: moveText 3s alternate;
+}
+.moving2{
+	position: relative;
+	animation: moveText2 3s alternate;
+}
+@keyframes moveText{
+	
+	0%{
+		transform: translateX(950px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+@keyframes moveText2{
+	
+	0%{
+		transform: translateX(-950px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.mt {
+	margin-top: 40px;
+}
+
+/* Links */
+a {
+    color: #f85c37;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+/* Bootstrap Modifications */
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.navbar {
+	font-weight: 800;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #cce0d9;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #ffffff;
+	background-color: #15bb7e;
+	border-radius: 15px;
+}
+
+.navbar-brand {
+	font-size: 60px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.btn-theme {
+	color: #ffffff;
+	background-color: #15bb7e;
+	border-color: transparent;
+}
+
+.btn {
+	padding: 10px 30px;
+	margin-bottom: 0;
+	font-size: 18px;
+	border: 5px solid transparent;
+	border-radius: 15px;
+}
+
+.lead {
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+ .Emailsec {
+	background-color: #3a3f3d;
+	padding: 10px 30px;
+	margin-bottom: 0;
+	margin-top: 40px;
+	font-weight: bold;
+	font-size: 18px;
+	border: 5px solid transparent;
+	border-radius: 15px;
+	cursor: pointer;
+ }
+.Emailsec{
+	color: #ffffff !important;
+}
+
+/* WRAP SECTIONS */
+
+/* hello */
+#hello {
+	width: 100%;
+	padding-top: 250px;
+	padding-bottom: 250px;
+}
+
+#hello h1 {
+	font-size: 90px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: #15bb7e;
+}
+
+#hello h2 {
+	color: #818181;
+	font-weight: 400;
+}
+
+/* Green */
+#green {
+	background-color: #15bb7e;
+	padding-top: 50px;
+	margin-bottom: 0px;
+}
+
+#green h3 {
+	color: white;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+
+#green p {
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+/* Skills */
+#skills {
+	background-color: #4e4e4e;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 50px;
+}
+
+#skills h3 {
+	color: white;
+}
+
+#skills p {
+	color: white;
+	font-weight: 400;
+}
+
+/* Social Links */
+#social {
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#social i {
+	font-size: 50px;
+	color: #15bb7e;
+}
+
+#social .col-md-3:hover {
+	background-color: #f5f5f5;
+}
+
+#social .col-md-3 {
+	padding:30px;
+}
+
+.chip {
+	display: inline-block;
+	margin-left: 50%;
+	padding: 0 25px;
+	height: 50px;
+	font-size: 16px;
+	line-height: 50px;
+	border-radius: 25px;
+	background-color: #f1f1f1;
+  }
+  
+  .chip img {
+	float: left;
+	margin: 0 10px 0 -25px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+  }
+  #aa {
+    font-weight: bold;
+	padding: 20px;
+    padding-bottom: 60px;
+	display: flex;
+    justify-content: center;
+  }
+
+/* Footer */
+#f {
+	padding-top: 20px;
+	background-color: #15bb7e;
+}
+
+#f p {
+	color: white;
+	text-align: right;
+	font-weight: 400;
+}
+
+
